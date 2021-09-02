@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet"href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+    <script src="index.js"></script>
+    <script src="index.css"></script>
+
+</head>
+<body>
+        <div style="width: auto">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand"style="align-content: center"><img src="picture/vlille.png"height="100" width="350"><img src="picture/logo-mel.jpg"height="100" width="520"></a>
+            </nav>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6">
+                    <a class="navbar-brand">V'Lille</a>
+                    <div class="input-group mb-3">
+                        <input type="search" id="station" class="form-control" placeholder="Entrer une station" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" onclick="station()">Rechercher</button>
+
+                        </div>
+                    </div>
+                    <div align="center" id="alert"></div>
+                </div>
+            </div>
+        </div><br>
+
+
+
+
+        <table class="table table-striped">
+            <thead>
+            <div>
+                <th scope="col">Commune</th>
+                <th scope="col">Nom</th>
+                <th scope="col">EN SERVICE</th>
+                <th scope="col">Nombre de places disponible</th>
+                <th scope="col">Nombre de vélos disponible</th>
+            </div>
+            </thead>
+            <tbody id="tableau">
+            <tr name ="TR">
+                <td name ="TD1"></td>
+                <td name="TD2"></td>
+                <td name ="TD3"></td>
+                <td name ="TD4"></td>
+                <td name ="TD5"></td>
+            </tr>
+
+            </tbody>
+        </table>
+</body>
